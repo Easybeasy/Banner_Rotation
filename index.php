@@ -18,7 +18,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="jqueryui/style.css">
         
         
-        <script>
+        <script> 
         $(function() {
           $( "#datepicker" ).datepicker({
             prevText: '&#x3c;zurück', prevStatus: '',
