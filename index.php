@@ -42,61 +42,37 @@ and open the template in the editor.
     <body>
     <div class="container">
         <div class="col-sm-4">
-        <form>
-            <!--  Normales  einzeiliges  Eingabefeld  -->
+            <form action="/Banner_Rotation/save_banner_details.php" id="form1">
+            
             <div class="form-group">
-                <label for="input1">Banner-Bezeichnung</label>
-                <input  type="text" class="form-control" id="input1" placeholder="Bitte  Bannername etwas  eingeben...">
+                <label>Banner-Bezeichnung</label>
+                <input  type="text" class="form-control" name="banner_bez" placeholder="Bitte  Bannername etwas  eingeben...">
             </div>
             
-            <!--  Banner-Upload  -->
+          
             <div class="form-group">
-                <label for="input1">Banner-Upload</label>
+                <label>Banner-Upload</label>
                <input id="input-b1" name="input-b1" type="file" class="file">
             </div>
 
-            <!--  Mehrzeiliges  Eingabefeld  (in  diesem  Fall  3  Zeilen)  -->
+           
             <div class="form-group">
-                <label for="input1">Banner-Upload</label>
-                <input class="form-control" type="date" value="" id="example-date-input">
+                <label>Aktiv-Von:</label>
+                <input class="form-control" type="date" value="" id="aktiv_von">
             </div>
-
-            <!--  Auswahlfeld  -->
+            
+            
             <div class="form-group">
-                <label for="input4">Auswahlfeld</label>
-                <select id="input4" class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
+                <label>Aktiv-Bis:</label>
+                <input class="form-control" type="date" value="" id="aktiv_bis">
             </div>
-
-            <!--  Optionsfeld  -->
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                    Radiobutton
-                </label>
-            </div>
-
-            <!--  Checkbox  -->
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox">
-                    Checkbox
-                </label>
-            </div>
-
-            <!--  Schaltflaeche  als  Button  -->        
-            <button type="submit" class="btn btn-primary btn-lg">Gro&szlig;er CTA Button</button>
+                      
+                 
+            <button type="submit" class="btn btn-primary btn-lg">Banner einstellen</button>
 
         </form>
     </div>
 </div>
-        <?php
-        // put your code here
-        ?>
+       
     </body>
 </html>
