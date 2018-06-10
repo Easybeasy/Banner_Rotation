@@ -20,7 +20,7 @@ and open the template in the editor.
     <body>
     <div class="container">
         <div class="col-sm-4">
-            <form action="/Banner_Rotation/save_banner_details.php" method="post" id="form1">
+            <form action="/Banner_Rotation/save_banner_details.php" method="post" id="form1" enctype="multipart/form-data">
             
             <div class="form-group">
                 <label>Banner-Bezeichnung</label>
@@ -30,7 +30,8 @@ and open the template in the editor.
                        
             <div class="form-group">
                 <label>Banner-Upload</label>
-               <input name="input-b1" type="file" class="file">
+               
+               <input type="file" name="image" />
             </div>
 
            
@@ -46,7 +47,7 @@ and open the template in the editor.
             </div>
                       
                  
-            <button type="submit" class="btn btn-primary btn-lg">Banner einstellen</button>
+            <button type="submit" name="submit" class="btn btn-primary btn-lg">Banner einstellen</button>
 
         </form>
     </div>
